@@ -1,22 +1,21 @@
 let number = +prompt('Введите число')
-let last = number.toString().slice(-1)
-let lastException = number.toString().slice(-2)
 
-if (number === isNaN) {
+
+if (isNaN(number)) {
     alert('Error')
 }
 
-if (lastException >= 11 && lastException <= 14) {
-    alert(number + ' лет')
+else if (number % 100 > 4 && number % 100 < 20) {
+    console.log(number + ' лет');
 }
 else {
-    if (last === 1) {
-        alert(number + ' год')
+    if (number % 10 === 1) {
+        console.log(number + ' год'); 
     }
-    else if (last === 2 || last === 3 || last === 4) {
-        alert(number + ' годa')
+    else if (number % 10 >= 2 && number % 10 <= 4) {
+        console.log(number + ' года');
     }
-    else if (last === 5 || last === 6 || last === 7 || last === 8 || last === 9 || last === 0){
-        alert(number + ' лет')
+    else {
+    console.log(number + ' лет');
     }
 }
